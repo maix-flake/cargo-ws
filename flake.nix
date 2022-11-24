@@ -28,7 +28,7 @@
         defaultPackage = naersk'.buildPackage {
           src = "${cargo_workspace}/cargo-workspaces";
           nativeBuildInputs = with pkgs; [pkg-config];
-          fbuildInputs = with pkgs; [openssl];
+          buildInputs = with pkgs; [openssl];
         };
 
         # For `nix develop` (optional, can be skipped):
